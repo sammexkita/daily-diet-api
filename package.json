@@ -4,16 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --watch src/server.ts", 
-    "knex": "node --loader tsx ./node_modules/.bin/knex"
+    "dev": "tsx --watch src/server.ts",
+    "knex": "node --loader tsx ./node_modules/.bin/knex",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tsx": "^3.12.6"
+    "@types/node": "^18.16.1",
+    "@types/supertest": "^2.0.12",
+    "supertest": "^6.3.3",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.1"
   },
   "dependencies": {
+    "@fastify/cookie": "^8.3.0",
     "dotenv": "^16.0.3",
     "fastify": "^4.16.3",
     "knex": "^2.4.2",
